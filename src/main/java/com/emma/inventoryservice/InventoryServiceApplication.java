@@ -17,9 +17,9 @@ public class InventoryServiceApplication {
     @Bean
     CommandLineRunner start(ProductRepository productRepository) {
         return args -> {
-            productRepository.save(new Product(null, "Computer HP ENVY", 500));
-            productRepository.save(new Product(null, "Printer Epson", 200));
-            productRepository.save(new Product(null, "Mac Book Pro 07", 600));
+            productRepository.save(new Product(null, "Computer HP ENVY", 500, 67));
+            productRepository.save(new Product(null, "Printer Epson", 200, 120));
+            productRepository.save(new Product(null, "Mac Book Pro 07", 600, 45));
         };
     }
 

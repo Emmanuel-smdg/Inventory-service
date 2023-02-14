@@ -7,4 +7,6 @@ public interface ProductProjection extends Projection {
     public Long getId();
     public String getName();
     public String getPrice();
+
+    public int getQuantity();
 }
